@@ -1,0 +1,216 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h> //clear screen
+#include <math.h>
+#include <windows.h>
+void alphabet();
+void alphabet()
+{
+    char wr, wc;
+    for (wr = 1; wr <= 7; wr++)
+    {
+        for (wc = 1; wc <= 51; wc++)
+        {
+            if ((wc == 1 || wc == 5 || wc == 8 || wc == 16 || wc == 39 || wc == 43 || wc == 45) || ((wr == 6) && (wc >= 2 && wc <= 2)) || ((wr == 6) && (wc >= 4 && wc <= 4)) || ((wr == 5) && (wc >= 3 && wc <= 3)) // W
+                || ((wr == 1 || wr == 7) && (wc >= 8 && wc <= 12)) || ((wr == 4) && (wc >= 8 && wc <= 10))                                                                                                           // E
+                || ((wr == 7) && (wc >= 16 && wc <= 20))                                                                                                                                                             // L
+                || (wr == 1 || wr == 7) && (wc >= 23 && wc <= 26) || (wc == 22) && (wr >= 2 && wr <= 6)                                                                                                              // C
+                || (wc == 30 || wc == 37) && (wr >= 2 && wr <= 6) || ((wr == 1 || wr == 7) && (wc >= 31 && wc <= 36))                                                                                                // O
+                || ((wr == 2) && (wc >= 40 && wc <= 40)) || ((wr == 2) && (wc >= 42 && wc <= 42)) || ((wr == 3) && (wc >= 41 && wc <= 41)))                                                                          // M
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+            if (((wr == 1 || wr == 7) && (wc >= 46 && wc <= 50) || (wr == 4) && (wc >= 46 && wc <= 48))) // E
+            /*(isko second if meh is liyea rakha  q ki space k kaaran welcome meh jadha space aajai  )*/
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    printf("---------------------------------------------------------------------------------------------------------------\n");
+    printf("\n");
+    char tr, tc;
+    for (tr = 1; tr <= 7; tr++)
+    {
+        for (tc = 1; tc <= 17; tc++)
+        {
+            if (((tr == 1) && (tc >= 1 && tc <= 9) || (tc == 5) && (tr >= 2 && tc <= 7)) // T
+                || ((tr == 1 || tr == 7) && (tc >= 12 && tc <= 16)))                     // O
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+            if ((tc == 10 || tc == 17) && tr >= 2 && tr <= 6)
+            {
+                printf("*");
+            }
+
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    Beep(500, 600);
+    printf("---------------------------------------------------------------------------------------------------------------\n");
+    printf("\n");
+    char ar, ac;
+    for (ar = 1; ar <= 7; ar++)
+    {
+        for (ac = 1; ac <= 89; ac++)
+        {
+            if ((ar == 1 || ar == 4) && (ac >= 2 && ac <= 5) || ((ac == 1 || ac == 6) && (ar >= 2 && ar <= 7))                                                                                                                                 // A
+                || ((ar == 1) && (ac >= 9 && ac <= 17) || (ac == 13) && (ar >= 2 && ar <= 7))                                                                                                                                                  // T
+                || ((ar == 1) && (ac >= 21 && ac <= 28) || (ac == 24) && (ar >= 2 && ar <= 7))                                                                                                                                                 // T
+                || ((ac == 31) || (ar == 1 || ar == 7) && (ac >= 32 && ac <= 37) || (ar == 4) && (ac >= 32 && ac <= 33))                                                                                                                       // E
+                || ((ac == 40 || ac == 46) || (ar == 2) && (ac >= 41 && ac <= 41) || (ar == 3) && (ac >= 42 && ac <= 42) || (ar == 4) && (ac >= 43 && ac <= 43) || (ar == 5) && (ac >= 44 && ac <= 44) || (ar == 6) && (ac >= 45 && ac <= 45)) // N
+                || ((ac == 49) || (ar == 1 || ar == 7) && (ac >= 50 && ac <= 51) || (ac == 52) && (ar >= 2 && ar <= 2) || (ac == 52) && (ar >= 6 && ar <= 6) || (ac == 53) && (ar >= 3 && ar <= 5))                                            // D
+                || ((ac == 56 || ac == 61) && (ar >= 2 & ar <= 7) || (ar == 1 || ar == 4) && (ac >= 57 && ac <= 60))                                                                                                                           // A
+                || ((ac == 64 || ac == 70) || (ar == 2) && (ac >= 65 && ac <= 65) || (ar == 3) && (ac >= 66 && ac <= 66) || (ar == 4) && (ac >= 67 && ac <= 67) || (ar == 5) && (ac >= 68 && ac <= 68) || (ar == 6) && (ac >= 69 && ac <= 69)) // N
+                || ((ar == 1 || ar == 7) && (ac >= 74 && ac <= 77) || (ac == 73) && (ar >= 2 && ar <= 6))                                                                                                                                      // C
+                || ((ac == 80) || (ar == 4) && (ac >= 81 && ac <= 82) || (ar == 1 || ar == 7) && (ac >= 81 && ac <= 86))                                                                                                                       // E
+            )
+
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+
+        printf("\n");
+    }
+    printf("----------------------------------------------------------------------------------------------------------------\n");
+    printf("\n");
+
+    char mr, mc;
+    for (mr = 1; mr <= 7; mr++)
+    {
+        for (mc = 1; mc <= 60; mc++)
+        {
+            if (
+                ((mc == 1 || mc == 5) || (mr == 2) && (mc >= 2 && mc <= 2) || (mr == 2) && (mc >= 4 && mc <= 4) || (mr == 3) && (mc >= 3 && mc <= 3))                                                                                                                                             // M
+                || ((mc == 8 || mc == 13) && (mr >= 2 && mr <= 7) || (mr == 1) && (mc >= 9 && mc <= 12) || (mr == 4) && (mc >= 9 && mc <= 12))                                                                                                                                                    // A
+                || ((mc == 16 || mc == 22) || (mr == 2) && (mc >= 17 && mc <= 17) || (mr == 3) && (mc >= 18 && mc <= 18) || (mr == 4) && (mc >= 19 && mc <= 19) || (mr == 5) && (mc >= 20 && mc <= 20) || (mr == 6) && (mc >= 21 && mc <= 21))                                                    // N
+                || ((mr == 1 || mr == 4) && (mc >= 26 && mc <= 29) || (mc == 25 || mc == 30) && (mr >= 2 && mr <= 7))                                                                                                                                                                             // A
+                || ((mc == 33) && (mr >= 2 && mr <= 6) || (mr == 1) && (mc >= 34 && mc <= 38) || (mr == 5) && (mc >= 36 && mc <= 38) || (mr == 7) && (mc >= 34 && mc <= 36) || (mr == 7) && (mc >= 38 && mc <= 38) || (mr == 6) && (mc >= 36 && mc <= 36) || (mr == 6) && (mc >= 38 && mc <= 38)) // G
+                || ((mr == 1 || mr == 7) && (mc >= 42 && mc <= 47) || (mr == 4) && (mc >= 42 && mc <= 43) || (mc == 41))                                                                                                                                                                          // E
+                || ((mc == 50) || (mr == 1 || mr == 4) && (mc >= 51 && mc <= 54) || (mr == 5) && (mc >= 52 && mc <= 52) || (mr == 6) && (mc >= 53 && mc <= 53) || (mr == 7) && (mc >= 54 && mc <= 54)) || (mc == 55) && (mr >= 2 && mr <= 3))
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+            // if ((mc==55)&&(mr>=2&&mr<=3))
+            // {
+            //     printf("*");
+            // }
+
+            // else
+            // {
+            //     printf(" ");
+            // }
+        }
+
+        printf("\n");
+    }
+
+    printf("----------------------------------------------------------------------------------------------------------------\n");
+    printf("\n");
+}
+void brain();
+int main()
+{
+    Beep(400, 900);
+    printf("----------------------------------------------------------------------------------------------------------------\n");
+    printf("\n");
+    printf("\n");
+    printf("\n");
+    alphabet();
+
+    // BRAINN Of protgram :)
+    brain();
+
+    return 0;
+}
+void brain()
+{
+
+    typedef float k;
+    typedef char ch;
+    typedef int kj;
+    ch pr = '%', ap, lable;
+    k total_attn, overall_attan, attan_percentage, required_attn = 0;
+    printf("Enter the total number of classes of your subject :");
+    scanf("%f", &total_attn);
+    printf("Enter the total number of classes you attened : ");
+    scanf("%f", &overall_attan);
+    required_attn = (total_attn * 75) / 100; // us Attendance ka 70 per aajai ga
+    if (total_attn >= overall_attan)
+    {
+
+        while (overall_attan <= total_attn)
+        {
+            attan_percentage = (overall_attan / total_attn) * 100; // 20/200*100
+            printf("\npercentage criteria  is :- 75 %c", pr);      // 75
+            // if (total_attn>=)
+            // {
+            //     /* code */
+            // }
+
+            printf("\n compulsory to attended classes  :- %.2f ", required_attn);                          // 150 classs
+            printf("\nYour attendance in percentage is :- %.2f %c ", attan_percentage, pr);                // 10%
+            printf("\nYou need more %.0f classes to cross 75 %c :)  ", required_attn - overall_attan, pr); // 150-20
+
+            printf("\nPRESS enter....! to cleat screen :) ");
+            Beep(600, 350);
+            getch();
+
+            system("cls");
+            printf("\nEnter.....! \n p = present \t a = absent ");
+
+            // kj resuslt;
+            scanf("\n%c", &ap);
+            switch (ap)
+            {
+
+            case 'p':
+                overall_attan++;
+                Beep(900, 550);
+                break;
+            case 'a':
+                overall_attan--;
+                Beep(1000, 850);
+                break;
+            default:
+                printf("WRONG INPUt....!");
+                break;
+            }
+        }
+    }
+    else
+    {
+        Beep(600, 650);
+        Beep(600, 650);
+        Beep(600, 650);
+        printf("Wrong input...... :(");
+    }
+}
